@@ -1,0 +1,23 @@
+@rootURL = http://localhost:5001/react/restapi
+
+@ID = 5fdb4818e4bb813d54dfb196
+
+### GET ALL RESTAPI
+GET {{rootURL}} HTTP/1.1
+
+### GET A RESTAPI BY ID
+GET {{rootURL}}/{{ID}}/ HTTP/1.1
+
+### CREATE A NEW RESTAPI
+POST {{rootURL}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "text": "Go to Store"
+}
+
+### DELETE A RESTAPI BY ID
+DELETE {{rootURL}}/{{ID}}/ HTTP/1.1
+
+### UPDATE A RESTAPI BY ID
+PATCH {{rootURL}}/{{ID}}/ HTTP/1.1
